@@ -1,0 +1,33 @@
+
+<Section class="Listado">
+    <div class="Listado_Contenedor">
+        <div class="Contenedor">
+            <div class="Contenedor_Titulo">
+                <h3>Listado</h3>
+            </div>
+            <hr>
+            <form class="Contenedor_Form">
+                <div class="Contenedor_Dato">
+                    <Label>Nombre:</Label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" [(ngModel)]="nombreImpit">
+                </div>
+                <div class="Contenedor_Dato">
+                    <Label>Apellido:</Label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" [(ngModel)]="apellidoImpit">
+                </div>
+                <div class="Contenedor_Boton">
+                    <input type="submit" (click)="agregarPersona()">
+                </div>
+            </form>
+        </div>
+        <div class="Listado_Dato">
+            <div class="Contenedor_Titulo">
+                <h3>Personas</h3>
+            </div>
+            <hr>
+            <div *ngFor="let persona of personas; let i = index">
+                <label for="">{{i}}.-{{persona.nombre}} {{persona.apellido}}</label>
+            </div>
+        </div>
+    </div>
+</Section>

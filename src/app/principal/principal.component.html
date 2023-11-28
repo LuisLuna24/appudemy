@@ -1,0 +1,21 @@
+<section class="Calculadora_Form">
+    <div class="Calculadora" (keyup)="Sumar()">
+        <div class="Tituo">
+            <h1>Calculadora</h1>
+        </div>
+        <div class="Dato">
+            <Label>Primer Numero</Label>
+            <input type="number" [(ngModel)]="numero01">
+        </div>
+        <div class="Dato">
+            <Label>Segundo Numero</Label>
+            <input type="number" [(ngModel)]="numero02">
+        </div >
+        <div class="Resultado">
+            <Label *ngIf="mostrar">Resultado:  {{resultado}}</Label>
+            <div class="boton" (click)="Sumar()">
+                <input type="button" value="Resultado">
+            </div>
+        </div>
+    </div>
+</section>

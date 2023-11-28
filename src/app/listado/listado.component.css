@@ -1,0 +1,68 @@
+.Listado{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Listado_Contenedor{
+    min-width: 350px;
+    max-width: 400px;
+    border:none ;
+    border-radius: 15px;
+    background-color: rgba(138, 138, 138, 0.932);
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Listado_Contenedor label{
+    color: aliceblue;
+    font-size: 1.3em;
+}
+
+.Contenedor {
+    width: 100%;
+}
+.Contenedor_Titulo {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 2.5em;
+    color: aliceblue;
+}
+.Contenedor_Form {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+.Contenedor_Dato {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Contenedor_Dato input{
+    width: 100%;
+    height: 25px;
+    border-radius: 25px;
+    padding: 0px 0px 0px 10px;
+}
+
+.Contenedor_Boton{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.Contenedor_Boton input{
+    width: 200px;
+    border-radius: 25px;
+    padding: 3px;
+
+}
